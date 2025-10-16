@@ -28,7 +28,6 @@ const Data = {
 		"[HEART]": "images/heart.png",
 		"[FIRE]": "images/fire.png"
 	},
-	
 	mapNodeImages: {
 	  "neow": "images/mapNeow.png",
 	  "firstencounter": "images/mapEncounter.png",
