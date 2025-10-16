@@ -1,0 +1,12 @@
+canvas {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: #222;
+	cursor: grab;
+}
+.Button {
+	height: 50px;
+	width: 200px;
+	padding-bottom: 10px;
+}
