@@ -31,7 +31,7 @@ const Data = {
 	
 	mapNodeImages: {
 	  "neow": "images/mapNeow.png",
-	  "first encounter": "images/mapEncounter.png",
+	  "firstencounter": "images/mapEncounter.png",
 	  "encounter": "images/mapEncounter.png",
 	  "elite": "images/mapElite.png",
 	  "boss": "images/mapBoss.png",
@@ -247,7 +247,7 @@ const Data = {
 	act1Map: {
 		"steps": [
 			{ "nodes": [ 
-				{ "id": "S1-1", "type": "first encounter" } 
+				{ "id": "S1-1", "type": "firstencounter" } 
 			]},
 			{ "nodes": [ 
 				{ "id": "S2-1", "type": "event" }, 
@@ -484,7 +484,7 @@ const Data = {
 			}
 		]
 	},
-	act1FirstEncounter: {
+	act1Firstencounter: {
 		"enemies": [
 			{ 
 				"name": "Small Slime", 

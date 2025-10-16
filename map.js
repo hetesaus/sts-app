@@ -301,12 +301,14 @@ function updatePopupPosition(node) {
 	const button = document.getElementById("node-popup-button");
 	button.textContent = node.type;
 	
-	if (["neow", "first encounter", "encounter", "elite", "boss", "event"].includes(node.type)) {
+	if (["neow", "firstencounter", "encounter", "elite", "boss", "event"].includes(node.type)) {
 		button.disabled = false;
 		button.onclick = () => {
 			let url;
 
-			if (node.type === "encounter") {
+			if (node.type === "firstencounter") {
+				url = `encounter.html?act=${actNumber}&type=firstencounter`;
+			} else if (node.type === "encounter") {
 				url = `encounter.html?act=${actNumber}`;
 			} else if (node.type === "elite") {
 				url = `encounter.html?act=${actNumber}&type=elite`;
@@ -431,7 +433,7 @@ canvas.addEventListener("wheel", e => {
   drawAll();
 });
 
-const navigableTypes = ["first encounter", "encounter", "elite", "boss", "event"];
+const navigableTypes = ["firstencounter", "encounter", "elite", "boss", "event"];
 
 // Click node
 canvas.addEventListener("click", e => {
@@ -453,7 +455,7 @@ canvas.addEventListener("click", e => {
 	currentNode = clicked;
 	smoothFocusNode(clicked);
 
-	// ✅ Only show popup if node type is navigable
+	// Only show popup if node type is navigable
 	if (navigableTypes.includes(clicked.type)) {
 		popupTimeout = setTimeout(() => { 
 			popupNode = clicked; 
