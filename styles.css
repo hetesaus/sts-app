@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Kreon';
+  src: url('fonts/Kreon-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Kreon', sans-serif;f;
+	color: white;
+	background: #242424;
+	font-size: 30px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+	min-width: 250px;
+}
+.gold-icon {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	font-size: 0;
+}
+.gold-icon img {
+	width: 100%;
+	height: 100%;
+}
+.gold-icon .gold-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	pointer-events: none;
+}
+.title {
+	font-size: 40px;
+	margin: 0px;
+}
+.title img {
+	height: 40px;
+	width: 40px;
+}
+.subtitle {
+	font-size: 22px;
+	color: grey;
+}
+.subtitle img {
+	height: 22px;
+	width: 22px;
+}
+.text {
+	font-size: 32px;
+}
+.text img {
+	height: 40px;
+	width: 40px;
+}
+.subtext {
+	font-size: 24px;
+}
+.subtext img {
+	height: 24px;
+	width: 24px;
+}
+.list {
+	list-style: none;
+	padding: 0px;
+	margin: 8px 0;
+}
+.icon {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+.guaranteed,
+.option,
+.option-background {
+	width: 600px;
+	margin: 10px 0;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.guaranteed {
+	background: rgba(116, 64, 59, 1);
+}
+.option-background {
+	background: rgba(72, 105, 108, 1);
+}
+.separator {
+	border: none;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.rounded {
+	border-radius: 24px;
+}

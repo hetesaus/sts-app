@@ -1,0 +1,96 @@
+.list {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.enemy {
+	flex: 0 0 auto;
+}
+.enemy-card {
+	color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	text-align: center;
+	min-height: 600px;
+	width: 320px;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: relative;
+	overflow: hidden;
+}
+.enemy-health {
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+	align-items: center;
+	margin-bottom: 4px;
+	gap: 6px;
+	color: red;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.enemy-attacks {
+	display: inline-block;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.enemy-attack-line {
+	display: flex;
+	align-items: center;
+	margin-bottom: 4px;
+	gap: 6px;
+	flex-wrap: wrap;
+	white-space: normal;
+}
+.enemy-attack-line img {
+	height: 1.2em;
+	width: auto;
+}
+.enemy-abilities {
+	position: absolute;
+	left: 30px; 
+	right: 30px;  
+	bottom: 30px;
+}
+.enemy-buttons {
+	margin: 6px 0;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.enemy-card.dead {
+	filter: grayscale(100%);
+	color: rgba(255, 255, 255, 0.2);
+}
+.rewards{
+	transform: scale(1.5);
+	width: 250px;
+}
+.rewards {
+  filter: grayscale(100%);
+  opacity: 20%;
+}
+.rewards.active {
+  filter: grayscale(0%);
+  opacity: 100%;
+}
+
+.overlay-btn {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+.overlay-btn.top {
+	top: 0;
+}
+.overlay-btn.bottom {
+	bottom: 0;
+}
